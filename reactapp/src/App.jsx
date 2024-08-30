@@ -1,16 +1,14 @@
-import "./App.css";
-
 function App() {
+  const fruits = ["Apple", "Banana", "Cherry"];
+
   return (
     <>
-      <h1 className="hey">Welcome Everyone! Let's Learn the React JS</h1>
-      <h1>{2 + 3}</h1>
-      <input type="color" name="" id="" />
-      <label htmlFor=""></label>
+      <h1>Fruit list</h1>
+      {fruits.map((fruit, id) => (
+        <li key={id}>{fruit}</li>
+      ))}
     </>
   );
 }
 
 export default App;
-
-// (JSX) => HTML + JS;
