@@ -1,12 +1,12 @@
-function App() {
-  const fruits = ["Apple", "Banana", "Cherry"];
+// import ControlledInput from "./ControlledInput";
+import FormWithValidation from "./FormWithValidation";
 
+function App() {
   return (
     <>
-      <h1>Fruit list</h1>
-      {fruits.map((fruit, id) => (
-        <li key={id}>{fruit}</li>
-      ))}
+      <h1>I am App Component</h1>
+      {/* <ControlledInput /> */}
+      <FormWithValidation />
     </>
   );
 }
