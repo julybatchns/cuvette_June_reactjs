@@ -1,10 +1,18 @@
 // import ControlledInput from "./ControlledInput";
 // import FormWithValidation from "./FormWithValidation";
-
 // import { useState } from "react";
-
 // import EffectHook from "./EffectHook.jsx";
-import Parent from "./Parent";
+// import Parent from "./Parent";
+// import DisplayData from "./components/DisplayData";
+// import withLoading from "./components/withLoading";
+// const DisplayDataWithLoading = withLoading(DisplayData);
+// import Home from "./components/Home";
+// import About from "./components/About";
+// import Contact from "./components/Contact";
+// import ReducerHook from "./components/ReducerHook";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import ThemeProvider from "./components/ThemeProvider";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 function App() {
   // const [toggle, setToogle] = useState(false);
@@ -13,7 +21,7 @@ function App() {
 
   return (
     <>
-      <h1>I am App Component</h1>
+      {/* <h1>I am App Component</h1> */}
       {/* <ControlledInput /> */}
       {/* <FormWithValidation /> */}
       {/* <button onClick={() => setToogle(!toggle)}>
@@ -24,7 +32,37 @@ function App() {
       ) : (
         <p>Click on the above button to see Counter App</p>
       )} */}
-      <Parent />
+      {/* <Parent /> */}
+      {/* <DisplayDataWithLoading /> */}
+
+      {/* <Router> */}
+      {/* <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about/:id" element={<About />} />
+            <Route path="/contact/:id" element={<Contact />} />
+          </Routes>
+        </div> */}
+
+      {/* </Router> */}
+      <ThemeProvider>
+        <ThemeSwitcher />
+        {/* <ReducerHook /> */}
+      </ThemeProvider>
     </>
   );
 }
