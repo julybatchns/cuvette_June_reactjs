@@ -47,3 +47,7 @@
 # React's useContext is a hook that allows you to access the context values in functional components.
 
 Consumer => Provider => Store
+
+# The useRef Hook in React is used to hold a mutable value that doesn't cause a re-render when updated. It is commonly used for accessing DOM elements or storing vaalues tht persist across renders without causing a component to re-render.
+
+# React will not re-render a component when a ref's value changes because refs are not considered part of the component’s state. They are simply a way to persist values across renders, without affecting the component’s lifecycle.

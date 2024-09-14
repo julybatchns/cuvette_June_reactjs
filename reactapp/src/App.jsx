@@ -11,8 +11,10 @@
 // import Contact from "./components/Contact";
 // import ReducerHook from "./components/ReducerHook";
 // import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import ThemeProvider from "./components/ThemeProvider";
-import ThemeSwitcher from "./components/ThemeSwitcher";
+// import ThemeProvider from "./components/ThemeProvider";
+// import ThemeSwitcher from "./components/ThemeSwitcher";
+// import RefHook from "./components/RefHook";
+import RefDOMFocus from "./components/RefDOMFocus";
 
 function App() {
   // const [toggle, setToogle] = useState(false);
@@ -59,10 +61,12 @@ function App() {
         </div> */}
 
       {/* </Router> */}
-      <ThemeProvider>
-        <ThemeSwitcher />
-        {/* <ReducerHook /> */}
-      </ThemeProvider>
+      {/* <ThemeProvider> */}
+      {/* <ThemeSwitcher /> */}
+      {/* <ReducerHook /> */}
+      {/* </ThemeProvider> */}
+      {/* <RefHook /> */}
+      <RefDOMFocus />
     </>
   );
 }
